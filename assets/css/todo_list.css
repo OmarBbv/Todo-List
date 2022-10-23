@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container {
+  padding: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.newtaskbox {
+  width: 550px;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 15px;
+  background: #f7f7f7;
+}
+
+.body {
+  width: 100%;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+input {
+  display: inline-block;
+  width: calc(100% - 40px);
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding-left: 10px;
+}
+
+.buton {
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background: #007bff;
+  color: white;
+  position: absolute;
+  font-size: 25px;
+}
+
+.buton:hover {
+  cursor: pointer;
+  background: #0069d9;
+}
+
+.tasklistbox {
+  width: 550px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.listheader {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  background: #f7f7f7;
+  padding: 15px 20px 20px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hepsinisil {
+  float: right;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #dc3545;
+  padding: 5px 10px;
+  color: #dc3545;
+}
+
+.add_item:focus,
+.search_item:focus {
+  outline-style: none;
+}
+
+.hepsinisil:hover {
+  background: #dc3545;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+  padding: 10px 20px 10px 15px;
+  background: #f7f7f7;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+i {
+  float: right;
+  color: gray;
+}
+
+i:hover {
+  color: rgb(221, 55, 55);
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+li.active {
+  text-decoration: line-through;
+  cursor: pointer;
+  background-color: rgb(151, 151, 151);
+}
+li.active i {
+  color: rgb(90, 90, 90);
+}
+
+body {
+  height: 100%;
+}
+body .footer {
+  position: absolute;
+  width: 15rem;
+  padding: 25px 70px;
+  bottom: 10px;
+  right: 10px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(211, 23, 23);
+  border-radius: 7px;
+  opacity: 0;
+}
+body .footer p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  color: white;
+}/*# sourceMappingURL=todo_list.css.map */
